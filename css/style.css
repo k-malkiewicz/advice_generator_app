@@ -70,7 +70,7 @@ body {
 
 @media (max-width: 560px) {
   .advice_container {
-    width: 100%;
+    width: 21.875rem;
     padding: 3.125rem 0.9375rem 4.6875rem 0.9375rem;
   }
   .divider {
