@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: #202632;
+  font-family: "Manrope", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+.advice_container {
+  width: 33.75rem;
+  padding: 3.125rem 2.5rem 4.6875rem 2.5rem;
+  background: #313a49;
+  text-align: center;
+  border-radius: 15px;
+  position: relative;
+}
+
+.advice_id {
+  color: #52ffa8;
+  font-size: 0.8125rem;
+  letter-spacing: 0.25rem;
+}
+
+.quote {
+  margin: 1.25rem 0 0;
+  color: #cee3e9;
+  font-size: 1.75rem;
+}
+
+.divider {
+  margin: 2.5rem 0 0;
+  background: url("../img/pattern-divider-desktop.svg") no-repeat;
+  background-position: center;
+  height: 1rem;
+}
+
+.new_quote_btn {
+  border: none;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  background: url("../img/icon-dice.svg") no-repeat, #52ffa8;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -1.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: box-shadow 0.5s, background-color 0.5s, box-shadow 0.5s;
+}
+.new_quote_btn.frozen {
+  background-color: #444;
+}
+.new_quote_btn.frozen:hover {
+  box-shadow: none;
+  cursor: default;
+}
+.new_quote_btn:hover {
+  box-shadow: 0 0 2.1875rem #52ffa8;
+}
+
+@media (max-width: 560px) {
+  .advice_container {
+    width: 100%;
+    padding: 3.125rem 0.9375rem 4.6875rem 0.9375rem;
+  }
+  .divider {
+    margin: 1.375rem 0 0;
+    background: url("../img/pattern-divider-mobile.svg") no-repeat;
+    background-position: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
