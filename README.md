@@ -9,13 +9,13 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 ## Links
 
 - Advice Slip API: (https://api.adviceslip.com)
-- Live Site Url: 
+- Live Site Url: (https://advice-generator-km9.netlify.app)
 
 ## Features
 
 - Click the button (green button with dice icon) to generate a random advice
 - After generating, you have to wait 2 seconds to generate a new advice again (the button changes the background to dark grey)
-- Advices is fetched from the Advice Slip API
+- Advices are fetched from the Advice Slip API
 
 ## Built with
 
