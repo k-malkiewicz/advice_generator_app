@@ -15,7 +15,7 @@ const freezeButton = () => {
 const generateRandomQuote = () => {
     const API_URL = "https://api.adviceslip.com/advice";
 
-    fetch(API_URL)
+    fetch(API_URL, {cache: 'no-cache'})
         .then(res => res.json())
         .then(data => {
             let [adviceId, quote] = [data.slip.id, data.slip.advice];
